@@ -1,0 +1,11 @@
+PROYECTO: notas
+
+Navegacion:  stack
+	   npm install @react-navigation/native
+	   npm install @react-navigation/native-stack
+	   
+Usar react native elements
+	npm install @rneui/themed @rneui/base
+
+	npm install react-native-vector-icons
+ 

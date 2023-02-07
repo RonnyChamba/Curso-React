@@ -1,0 +1,26 @@
+1) Crear proyecto react native
+
+2) Crear proyecto y aplicacion  web en firebase
+
+3) instalar dependencia firebase al proyecto: npm install firebase  
+
+4) Agregar configuración al proyecto  obtenida de firebase
+
+5) Inicializar la app para comprobar
+
+NOTA: si da un error al iniciar la app x motivo de soporte archivos jsx. agregar un archivo
+
+
+
+# Base de datos en firebase
+	
+	* Son una coleccion de documentos
+	* Un documentos siemopre tiene un ide unico
+	
+
+
+
+	
+
+
+

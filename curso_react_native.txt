@@ -1,0 +1,125 @@
+* Crear una nueva aplicacion
+  expo init nombreApp
+
+* Iniciar App
+  expo start
+
+
+* Detener APp
+  CTRL + C : en la consola donde este corriendo el servidor
+
+
+<TextInput  keyboardType  = 'numeric'  editable = {true}/> : define un textInput con entrada solo numerica
+
+* Pasar codigo js en los componentes
+
+   <Button title ="Titulo"    /> : contenido estatico
+
+   <Button title ={miVaribleJs}/>
+   
+   
+  Conponentes:
+  Button : eventos onPress= function
+  
+    
+  
+
+# ****************Uuse State*****************************************
+  Permite manejar estado de una  variable
+  
+  
+  const [variable, setVariable] = useState();
+  
+# https://reactnative.dev/docs/layout-props  : ver propiedades
+  
+# *********************************************************************
+  # FlexBox : Los valores de las propiedades  van entre comillas
+   https://reactnative.dev/docs/flexbox 
+    
+   * ejes: row y column
+
+   * Eje por default :  column , hacia abajo
+   
+   * Valores justifycontent : flex-start(valor default) | flex-end | center |  space-between | space-around
+   * Valores aligntItems: flex-start | flex-end | center | stretch(por default, stretch solo existe en alignItems)
+                           si los elementos tienes valor asignado un witdh, stretch  no tendra efecto
+   			  
+  * alignSelf : se aplica sobre un elemento hijo
+  
+  
+# ****************************************************************************************
+FlatList : Elemento para represantar una lista de elementos: este elemento siempre ocupa todo el hight de la pantalla
+	Atributos:
+	data: un arreglo que representa lo que se mostrara en la lista
+	renderItem : función 	que recibe un objeto por cada item del arreglo
+		   además debe retorna JSX , ejemplo return <Text />	
+		   
+		   El objeto quye recibe, tienes las siguiente propiedades
+		   	item: el onjeto de cada iteracion del arreglo
+		   	index: el indice
+        KeyExtractor: define un indentificador unico para cada elemento de la lista
+        	     recibe una funcion con el item actual y debe retorna un indentificador para elementos que se rendizará
+		   	
+		    		
+		
+
+
+
+ # ******************************************************************
+ 
+ Stack Navigaion
+ 
+  Paquetes necesarios a installar dentro de proyecto(debe ejecutarse los comandos dentro del proyecto de react).
+  	1) npm install @react-navigation/native
+  	2) npm install react-native-screens react-native-safe-area-context
+  	
+  	
+  	Stack Navigation
+  	* npm install @react-navigation/native-stack
+  	
+  	
+  	
+Navegacion stack:
+Tiene las caracteristica que se guarda en una pila(stack)  las llamadas,se guarda un registro ordenado de las llamadas	anteriores
+  
+  
+# ********************************************************************************
+
+React native element  : https://reactnativeelements.com/docs
+
+Es una implementacion de react native que provee nuevos components o componentes mas customizados
+
+	
+Instalacion de dependencias
+
+* 	npm install @rneui/themed @rneui/base
+
+* 	npm install react-native-vector-icons
+
+
+
+Iconos para utilizar
+https://oblador.github.io/react-native-vector-icons/
+
+#*******************************************************************
+BOTON FLOTANTE : import { FAB } from "@rneui/base";
+<FBA  placement ="left|center|right" />
+  
+  
+ #**********************************************************
+ 
+ Pasar parametros o funciones  al navegar a otro pantalla
+ 
+
+- En la vista origen
+navigation.navigate('nameScreen',  {para1: valu1, fnRefresh: mifunction})
+ 
+ - En la vista destino
+ Se recupera los parametro mediante el objeto 'router' y accediendo a la propiedad params.
+ 
+ Ejem: router.params.miParametro    Ejem: router.params.miFuncion
+ 
+ 
+ 
+ 
+  
